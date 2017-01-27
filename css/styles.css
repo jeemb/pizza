@@ -9,6 +9,7 @@ form {
 
 body {
   background-color: #ededed;
+  margin-top: 150px;
 }
 
 #output {
@@ -31,4 +32,19 @@ p {
 	text-align: center;
 	border: 3px dashed #ccc;
   color: #E84F3D;
+}
+
+#headwrapper {
+position: fixed;
+width: 100%;
+top: 30px;
+height: 90px;
+background-image: url("https://www.hungryhowies.com/sites/default/files/images/menu-items/thumbnails/build-pizza.png");
+}
+
+#bottomwrapper {
+width: 100%;
+top: 30px;
+height: 90px;
+background-image: url("https://www.hungryhowies.com/sites/default/files/images/menu-items/thumbnails/build-pizza.png");
 }
