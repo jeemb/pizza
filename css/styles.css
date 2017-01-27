@@ -10,6 +10,7 @@ form {
 body {
   background-color: #ededed;
   margin-top: 150px;
+  font-family: "Helvetica", helvetica, sans-serif;
 }
 
 #output {
@@ -19,7 +20,6 @@ body {
 .form-group {
   text-align: center;
 }
-
 
 p {
   font-weight: bold;
@@ -35,7 +35,7 @@ p {
 }
 
 #headwrapper {
-position: fixed;
+/*position: fixed;*/
 width: 100%;
 top: 30px;
 height: 90px;
