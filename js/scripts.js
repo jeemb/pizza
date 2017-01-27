@@ -8,6 +8,12 @@ Pizza.prototype.cost = function() {
   return 1.50 * this.toppings + 5 * this.size
 }
 
+Pizza.prototype.checkFill = function() {
+  if (this.toppings < 1) {
+  alert("Please select one or more toppings");
+  }
+}
+
 //user interface logic
 $(document).ready(function() {
   $("form#input").submit(function(event) {
@@ -17,6 +23,9 @@ $(document).ready(function() {
     var pizzaSize = $("input:radio[name=size]:checked").val();
 
     var newPizza = new Pizza(numberOfToppings, pizzaSize);
+
+    newPizza.checkFill();
+
     var price = newPizza.cost();
     var dollar = '$' + price.toFixed(2);
 

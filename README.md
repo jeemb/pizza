@@ -14,7 +14,7 @@ This program generates a cost for a pizza based on user-selected pizza toppings 
 	* **Input**: 2 pizza toppings
 	* **Output**: $5.00
 
-* This program generates a pizza cost based on size of pizza toppings
+* This program generates a pizza cost based on one selection of pizza
 	* **Input**: small pizza
 	* **Output**: $10.00
 
