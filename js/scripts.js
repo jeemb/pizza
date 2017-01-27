@@ -7,3 +7,15 @@ function Pizza(tppings, size) {
 Pizza.prototype.cost = function() {
   return 2 * this.toppings + 5 * this.size
 }
+
+//user interface logic
+$(document).ready(function() {
+  $("form#input").submit(function(event) {
+    event.preventDefault();
+
+    var numberOfToppings = $("#".length);
+    var pizzaSize = $("#")
+
+
+  })
+});
