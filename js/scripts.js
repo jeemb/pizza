@@ -16,6 +16,10 @@ $(document).ready(function() {
     var numberOfToppings = $("#".length);
     var pizzaSize = $("#")
 
+    var newPizza = new Pizza(numberOfToppings, pizzaSize);
+    var price = Pizza.cost();
 
+    $("#output").show();
+    $("#output").text(price);
   })
 });
