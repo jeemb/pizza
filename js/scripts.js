@@ -5,7 +5,7 @@ function Pizza(toppings, size) {
 }
 
 Pizza.prototype.cost = function() {
-  return 1.5 * this.toppings + 5 * this.size
+  return 1.50 * this.toppings + 5 * this.size
 }
 
 //user interface logic
@@ -15,13 +15,12 @@ $(document).ready(function() {
 
     var numberOfToppings = ($("input:checkbox[name=toppings]:checked").length);
     var pizzaSize = $("input:radio[name=size]:checked").val();
-    alert(numberOfToppings);
-    alert(pizzaSize);
 
     var newPizza = new Pizza(numberOfToppings, pizzaSize);
     var price = newPizza.cost();
+    var dollar = '$' + price.toFixed(2);
 
     $("#output").show();
-    $("#output").text(price);
+    $("#cost").text(dollar);
   })
 });

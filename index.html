@@ -11,35 +11,47 @@
     <title>Pizza Delivery</title>
   </head>
   <body>
-<div class="container">
-  <h1>Order Your Pizza</h1>
-    <form id="input">
+  <div class="container">
+    <div class="hero-unit">
+    <h1>Order Your Pizza</h1>
+      <p>Choose your toppings and size below</p>
+    </div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="form-group" id="toppings">
-                <p>Choose from the following pizza toppings:</p>
-                <input type="checkbox" name="toppings" value="1"> Cheese only <br>
-                <input type="checkbox" name="toppings" value="2"> Pepperoni <br>
-                <input type="checkbox" name="toppings" value="3"> Mushrooms <br>
-                <input type="checkbox" name="toppings" value="4"> Peppers <br>
+        <form id="input">
+            <div class="col-md-6">
+              <div class="form-group">
+                    <p>Choose from the following pizza toppings:</p>
+                    <input type="checkbox" name="toppings" value="1"> Cheese <br>
+                    <input type="checkbox" name="toppings" value="2"> Pepperoni <br>
+                    <input type="checkbox" name="toppings" value="3"> Mushrooms <br>
+                    <input type="checkbox" name="toppings" value="4"> Peppers <br>
+            </div>
+              </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                    <p>Choose size of pizza:</p>
+                    <input type="radio" name="size" value="1"> Small <br>
+                    <input type="radio" name="size" value="2"> Medium <br>
+                    <input type="radio" name="size" value="3"> Large <br>
+                    <input type="radio" name="size" value="4"> X-Large <br>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="form-group" id="size">
-                <p>Choose size of pizza:</p>
-                <input type="radio" name="size" value="1">Small<br>
-                <input type="radio" name="size" value="2">Medium<br>
-                <input type="radio" name="size" value="3">Large<br>
-                <input type="radio" name="size" value="4">X-Large<br>
+          <div class="row">
+          <div class="col-md-12">
+          <div class="text-center">
+          <button type="submit" class="btn btn-info" id="singlebutton">Submit Order!</button>
+        </form>
+        <div id="output">
+          <h4>Your order has been placed!</h4>
+          <h5>Your total comes to: <span id="cost"></span></h5>
+          <div class="coupon">
+            <h5>COUPON: 50% your next order</h5>
+            <p>Expires 12/31/17</p>
           </div>
         </div>
       </div>
-      <button type="submit">Submit Order!</button>
-    </form>
-
-    <div id="output">
-      <p>Your pizza is in the oven! Your total comes to: <span id="cost"></span></p>
+      </div>
     </div>
-  </div>
   </body>
 </html>
