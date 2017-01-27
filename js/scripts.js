@@ -1,11 +1,11 @@
 // business logic
-function Pizza(tppings, size) {
+function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
 }
 
 Pizza.prototype.cost = function() {
-  return 2 * this.toppings + 5 * this.size
+  return 1.5 * this.toppings + 5 * this.size
 }
 
 //user interface logic
@@ -13,11 +13,13 @@ $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
 
-    var numberOfToppings = $("#".length);
-    var pizzaSize = $("#")
+    var numberOfToppings = ($("input:checkbox[name=toppings]:checked").length);
+    var pizzaSize = $("input:radio[name=size]:checked").val();
+    alert(numberOfToppings);
+    alert(pizzaSize);
 
     var newPizza = new Pizza(numberOfToppings, pizzaSize);
-    var price = Pizza.cost();
+    var price = newPizza.cost();
 
     $("#output").show();
     $("#output").text(price);
