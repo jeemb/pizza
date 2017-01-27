@@ -14,6 +14,10 @@ Pizza.prototype.checkFill = function() {
   }
 }
 
+Pizza.prototype.createEntry = function() {
+  return "<li>'Order placed:'" + this.size + "pizza with: " + this.toppings "toppings""</li>"
+}
+
 //user interface logic
 $(document).ready(function() {
   $("form#input").submit(function(event) {
